@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    /* background-color: aqua; */
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+li:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 10px;
+}
+.three{
+    height: 50vh;
+    position:relative;
+    top:20px;
+    font-size:1rem;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.About_me{
+    /* background-color: aqua; */
+    width: 90%;
+    position:relative;
+    top: 30px;
+}
+.About2{
+    /* background-color: aqua; */
+    width: 50%;
+}
+#image_About{
+    height:60vh;
+}
+.skills{
+    width:100%;
+}
+.para{
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid red;
+}
+.para1{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.image{
+    height:20vh;
+}
+.b{
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+.b:hover{
+    border: 2px solid red;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+textarea[type=textarea], input[type=text],input[type=email]{
+    border: 1px solid red;
+}
+.hire_me{
+    height:70vh;
+}
+.c{
+    border: 1px solid red;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    margin-left: 30px;
+    width: 400px;
+}
+.d{
+    border: 1px solid red;
+    width: 70%;
+}
+.form-control{
+    width: 50%;
+    border: 1px solid red;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid red;
+}
+
+@media screen and (max-width:500px) {
+    .image{
+        display: none;
+    }
+    .skill{
+        flex-direction: column;
+    }
+    .image_About{
+        justify-content: center;
+        text-align: center;
+    }
+    .About_me{
+        flex-direction: column;
+    }
+    .About2{
+        width: 90%;
+    }
+    /* .two{
+        background-color: red;
+    } */
+    .three{
+        font-size: 1rem;
+    }
+    .b{
+        height: 200px;
+        width: 200px;
+    }
+    .form-control{
+        width:80%;
+    }
+    .c{
+        margin: auto;
+        float: none;
+        max-width:250px;
+    }
+}
+@media screen and (max-width:800px) {
+    .image{
+        display: none;
+    }
+    .skill{
+        flex-direction: column;
+    }
+    .image_About{
+        text-align: center;
+    }
+    .About2{
+        width: 90%;
+    }
+    /* .two{
+        background-color: red;
+    } */
+    .form-control{
+        width:80%;
+    }
+    .c{
+     width:200px;
+    }
+}
+@media screen and (max-width:1000px) {
+    /* .two{
+        background-color: red;
+ 
+    } */
+    .image{
+        display: none;
+    }
+    .three{
+        margin-bottom: 70px;
+    }
+    .form-control{
+        width:60%;
+    }
+    .c{
+        width:300px;
+    }
+}
